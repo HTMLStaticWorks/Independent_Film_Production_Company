@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+    <title>The Silent Echo | Production Details | Lumina Cinema</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Deep dive into the production of 'The Silent Echo'. Explore the creative process, technical specifications, and production team.">
+    <meta name="keywords" content="The Silent Echo, Film Production, Cinematography, Lumina Cinema">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .production-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1492691523567-6170f0295db0?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .stats-box {
+            background: var(--bg-card);
+            padding: var(--space-4);
+            border: 1px solid var(--border-color);
+            margin-top: -80px;
+            z-index: 10;
+            position: relative;
+        }
+    </style>
+</head>
+<body class="bg-noir">
+
+
+<header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <div class="brand-text d-none d-sm-flex">
+                        <span class="text-primary fw-bold letter-spacing-1">LUMINA</span>
+                        <span class="text-theme fw-bold letter-spacing-1">CINEMA</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list text-theme fs-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Home Pages
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark bg-noir border-secondary" aria-labelledby="homeDropdown">
+                                <li><a class="dropdown-item py-2" href="index.html">Home 1</a></li>
+                                <li><a class="dropdown-item py-2" href="home-2.html">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                                                <li class="nav-item ms-lg-3">
+                            <div class="nav-controls-stack">
+                                <button id="themeToggle" class="btn btn-outline-cinema p-1 border-0" title="Toggle Theme">
+                                    <i class="bi bi-moon-stars-fill text-primary fs-5"></i>
+                                </button>
+                                <button id="rtlToggle" class="btn btn-outline-cinema p-1 border-0" title="Toggle RTL" aria-label="Toggle RTL direction">
+                                    <span class="rtl-label" aria-hidden="true">RTL</span>
+                                </button>
+                                <a class="btn btn-primary-cinema" href="login.html">Log in</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Production Hero -->
+        <section class="production-hero mt-5">
+            <div class="container">
+                <span class="text-primary text-uppercase ls-2 fw-bold mb-3 d-block">Feature Film | Drama</span>
+                <h1 class="display-2 fw-bold mb-0">The Silent Echo</h1>
+            </div>
+        </section>
+
+        <!-- Technical Stats -->
+        <section class="mb-5">
+            <div class="container">
+                <div class="stats-box">
+                    <div class="row text-center g-4">
+                        <div class="col-md-3">
+                            <span class="text-muted small ls-2 text-uppercase mb-2 d-block">Format</span>
+                            <h5 class="text-primary">8K Anamorphic</h5>
+                        </div>
+                        <div class="col-md-3">
+                            <span class="text-muted small ls-2 text-uppercase mb-2 d-block">Status</span>
+                            <h5 class="text-primary">Post-Production</h5>
+                        </div>
+                        <div class="col-md-3">
+                            <span class="text-muted small ls-2 text-uppercase mb-2 d-block">Runtime</span>
+                            <h5 class="text-primary">112 Minutes</h5>
+                        </div>
+                        <div class="col-md-3">
+                            <span class="text-muted small ls-2 text-uppercase mb-2 d-block">Locations</span>
+                            <h5 class="text-primary">Italian Alps</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Description -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2 class="mb-4">Synopsys & Vision</h2>
+                        <p class="text-muted lead mb-4">'The Silent Echo' explores the internal struggle of a retired clockmaker who discovers an ancient acoustic anomaly in a remote mountain village. The film is a study of solitude, time, and the weight of unspoken grief.</p>
+                        <p class="text-muted mb-5">Directed by Julian Thorne, the production utilized custom-built anamorphic lenses to capture the claustrophobic beauty of the valley. Every frame was meticulously graded to evoke a sense of timeless melancholy.</p>
+                        
+                        <h3 class="mb-4">Production Timeline</h3>
+                        <div class="border-start border-primary border-3 ps-4 mb-5">
+                            <div class="mb-4">
+                                <h5 class="text-white">Pre-Production <span class="text-muted small ms-2">Dec 2024 - Feb 2025</span></h5>
+                                <p class="text-muted small">Location scouting in Northern Italy and initial script revisions.</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="text-white">Principal Photography <span class="text-muted small ms-2">Mar 2025 - May 2025</span></h5>
+                                <p class="text-muted small">Shot on location using RED V-RAPTOR 8K cameras.</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="text-white">Post-Production <span class="text-muted small ms-2">June 2025 - Present</span></h5>
+                                <p class="text-muted small">Final editing, color grading, and orchestral scoring underway.</p>
+                            </div>
+                        </div>
+
+                        <h3 class="mb-4">Key Credits</h3>
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6">
+                                <div class="bg-card-noir p-3 border border-dark">
+                                    <span class="text-primary small fw-bold text-uppercase d-block mb-1">Director</span>
+                                    <h6 class="mb-0">Julian Thorne</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-card-noir p-3 border border-dark">
+                                    <span class="text-primary small fw-bold text-uppercase d-block mb-1">Executive Producer</span>
+                                    <h6 class="mb-0">Elena Vance</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-card-noir p-3 border border-dark">
+                                    <span class="text-primary small fw-bold text-uppercase d-block mb-1">Cinematographer</span>
+                                    <h6 class="mb-0">Marcus Reed</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-card-noir p-3 border border-dark">
+                                    <span class="text-primary small fw-bold text-uppercase d-block mb-1">Scoring</span>
+                                    <h6 class="mb-0">The London Symphony</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-4">
+                        <div class="bg-card-noir p-4 border border-dark sticky-top" style="top: 100px;">
+                            <h4 class="mb-4">Investment Opportunity</h4>
+                            <p class="text-muted small mb-4">We are currently accepting Tier 1 investments for marketing and global distribution rights for 'The Silent Echo'.</p>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li class="mb-2"><i class="bi bi-check text-primary me-2"></i> Profit Sharing 5%</li>
+                                <li class="mb-2"><i class="bi bi-check text-primary me-2"></i> Executive Producer Credit</li>
+                                <li class="mb-2"><i class="bi bi-check text-primary me-2"></i> Private Premiere Invite</li>
+                            </ul>
+                            <a href="pricing.html" class="btn btn-cinema btn-primary-cinema w-100 mb-3">Learn More</a>
+                            <a href="contact.html" class="btn btn-cinema btn-outline-cinema w-100">Contact Producer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Newsletter CTA -->
+        <section class="section-padding bg-noir overflow-hidden position-relative">
+            <div class="container text-center py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="display-5 mb-4 italic">Join the Inner Circle</h2>
+                        <p class="text-muted mb-5">Subscribe to get exclusive behind-the-scenes content and early access to investor opportunities.</p>
+                        <form class="row g-2 justify-content-center needs-validation" novalidate>
+                            <div class="col-md-7">
+                                <input type="email" class="form-control bg-dark text-white border-secondary rounded-0 py-3 px-4" placeholder="Enter your email address" required>
+                                <div class="invalid-feedback text-start">Please provide a valid email.</div>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="submit" class="btn btn-cinema btn-primary-cinema w-100 h-100">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="section-padding py-5 border-top border-dark">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center gap-2 mb-4" href="index.html">
+                        <div class="brand-text">
+                            <span class="text-primary fw-bold letter-spacing-1">LUMINA</span>
+                            <span class="text-theme fw-bold letter-spacing-1">CINEMA</span>
+                        </div>
+                    </a>
+                    <p class="text-muted mb-4 pe-lg-5">Redefining independent cinema through visual excellence and technical innovation. Join our visionary journey.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0" aria-label="Follow us on Twitter"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0" aria-label="Follow us on Instagram"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0" aria-label="Follow us on LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase small ls-2 fw-bold mb-4 text-theme">Explore</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="about.html">Our Studio</a></li>
+                        <li class="mb-2"><a href="services.html">Productions</a></li>
+                        <li class="mb-2"><a href="blog.html">Journal</a></li>
+                        <li class="mb-2"><a href="pricing.html">Investment</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase small ls-2 fw-bold mb-4 text-theme">Resources</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="#">Press Kits</a></li>
+                        <li class="mb-2"><a href="#">Terms of Use</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="text-uppercase small ls-2 fw-bold mb-4 text-theme">Studio Headquarters</h5>
+                    <p class="text-muted mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> 1246 Cinema Plaza, North Hollywood, CA 91605</p>
+                    <p class="text-muted mb-2"><i class="bi bi-envelope text-primary me-2"></i> productions@lumina.film</p>
+                    <p class="text-muted mb-0"><i class="bi bi-telephone text-primary me-2"></i> +1 (555) 0199-CINEMA</p>
+                </div>
+            </div>
+            <hr class="border-secondary mt-5 pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted small mb-0">© 2026 Lumina Cinema Productions. All digital rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <p class="text-muted small mb-0">
+                        <a href="#" class="text-muted text-decoration-none">Service Policy</a>
+                        <span class="mx-2">|</span>
+                        <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
