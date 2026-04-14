@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">The Silent Echo poster</title>
+  <desc id="desc">A moody gold and black poster for The Silent Echo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#171717"/>
+      <stop offset="55%" stop-color="#080808"/>
+      <stop offset="100%" stop-color="#020202"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" x2="1">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#f0d77a" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="640" cy="115" r="82" fill="#d4af37" opacity="0.12"/>
+  <path d="M0 420C120 390 210 355 300 296C391 236 486 141 800 50V500H0Z" fill="#0d0d0d"/>
+  <path d="M90 385C196 330 290 260 380 150" stroke="url(#glow)" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <text x="58" y="96" fill="#f1df9f" font-family="Georgia, serif" font-size="24" letter-spacing="4">2024 RELEASE</text>
+  <text x="58" y="338" fill="#ffffff" font-family="Georgia, serif" font-size="68" font-weight="700">THE</text>
+  <text x="58" y="408" fill="#ffffff" font-family="Georgia, serif" font-size="68" font-weight="700">SILENT ECHO</text>
+  <text x="60" y="454" fill="#d4af37" font-family="Arial, sans-serif" font-size="24" letter-spacing="6">DRAMA / SHORT FILM</text>
+</svg>

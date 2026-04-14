@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Vanish Point poster</title>
+  <desc id="desc">A high-contrast thriller poster for Vanish Point.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d0d0d"/>
+      <stop offset="100%" stop-color="#020202"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <path d="M400 56L680 500H120Z" fill="#151515"/>
+  <path d="M400 118L608 500H192Z" fill="#070707"/>
+  <path d="M390 205L410 205L462 500H338Z" fill="#d4af37" opacity="0.9"/>
+  <text x="58" y="92" fill="#d4af37" font-family="Arial, sans-serif" font-size="24" letter-spacing="7">THRILLER / MYSTERY</text>
+  <text x="58" y="348" fill="#ffffff" font-family="Georgia, serif" font-size="72" font-weight="700">VANISH</text>
+  <text x="58" y="422" fill="#ffffff" font-family="Georgia, serif" font-size="72" font-weight="700">POINT</text>
+  <text x="58" y="462" fill="#b7b7b7" font-family="Arial, sans-serif" font-size="24" letter-spacing="6">A DESCENT INTO SHADOW</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Echoes of Dawn poster</title>
+  <desc id="desc">A warm dawn-toned adventure poster for Echoes of Dawn.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#24140d"/>
+      <stop offset="55%" stop-color="#8a4b1a"/>
+      <stop offset="100%" stop-color="#f0b35d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky)"/>
+  <circle cx="632" cy="118" r="76" fill="#ffd27a" opacity="0.85"/>
+  <path d="M0 366C120 318 225 330 335 290C457 246 578 177 800 219V500H0Z" fill="#20140d" opacity="0.85"/>
+  <path d="M0 416C110 387 230 377 334 346C469 305 589 289 800 328V500H0Z" fill="#100a07"/>
+  <text x="58" y="102" fill="#fff1cb" font-family="Arial, sans-serif" font-size="24" letter-spacing="7">DRAMA / ADVENTURE</text>
+  <text x="54" y="348" fill="#ffffff" font-family="Georgia, serif" font-size="68" font-weight="700">ECHOES</text>
+  <text x="54" y="418" fill="#ffffff" font-family="Georgia, serif" font-size="68" font-weight="700">OF DAWN</text>
+  <text x="58" y="460" fill="#20140d" font-family="Arial, sans-serif" font-size="24" letter-spacing="6">A NEW HORIZON / 2025</text>
+</svg>

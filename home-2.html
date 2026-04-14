@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
     <title>Editorial Gallery | Lumina Cinema</title>
-    
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Explore the editorial gallery of Lumina Cinema. A deep dive into the visual language of our independent film productions.">
+    <meta name="description"
+        content="Explore the editorial gallery of Lumina Cinema. A deep dive into the visual language of our independent film productions.">
     <meta name="keywords" content="Film Gallery, Cinema Editorial, Independent Film, Lumina Cinema">
     <meta name="author" content="Lumina Cinema Productions">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap 5 & Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,34 +28,30 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        .editorial-hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-        }
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 2px;
         }
+
         .gallery-item {
             aspect-ratio: 16/9;
             overflow: hidden;
             position: relative;
         }
+
         .gallery-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: var(--transition-smooth);
         }
+
         .gallery-item:hover img {
             transform: scale(1.05);
             filter: grayscale(100%);
         }
+
         .gallery-overlay {
             position: absolute;
             top: 0;
@@ -65,15 +65,17 @@
             opacity: 0;
             transition: var(--transition-fast);
         }
+
         .gallery-item:hover .gallery-overlay {
             opacity: 1;
         }
     </style>
 </head>
+
 <body class="bg-noir">
 
 
-<header>
+    <header>
         <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
@@ -82,16 +84,20 @@
                         <span class="text-theme fw-bold letter-spacing-1">CINEMA</span>
                     </div>
                 </a>
-                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <i class="bi bi-list text-theme fs-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navMenu">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Home
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-dark bg-noir border-secondary" aria-labelledby="homeDropdown">
+                            <ul class="dropdown-menu dropdown-menu-dark bg-noir border-secondary"
+                                aria-labelledby="homeDropdown">
                                 <li><a class="dropdown-item py-2" href="index.html">Home 1</a></li>
                                 <li><a class="dropdown-item py-2" href="home-2.html">Home 2</a></li>
                             </ul>
@@ -111,16 +117,14 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
-                                                <li class="nav-item ms-lg-3">
-                            <div class="nav-controls-stack">
-                                <button id="themeToggle" class="btn btn-outline-cinema p-1 border-0" title="Toggle Theme">
-                                    <i class="bi bi-moon-stars-fill text-primary fs-5"></i>
-                                </button>
-                                <button id="rtlToggle" class="btn btn-outline-cinema p-1 border-0" title="Toggle RTL" aria-label="Toggle RTL direction">
-                                    <span class="rtl-label" aria-hidden="true">RTL</span>
-                                </button>
-                                <a class="btn btn-primary-cinema" href="login.html">Log in</a>
-                            </div>
+                        <li class="nav-item ms-lg-3 d-flex align-items-center gap-2">
+                            <button id="themeToggle" class="btn btn-outline-cinema p-1 border-0" title="Toggle Theme">
+                                <i class="bi bi-moon-stars-fill text-primary fs-5"></i>
+                            </button>
+                            <button id="rtlToggle" class="btn btn-outline-cinema p-1 border-0" title="Toggle RTL">LTR</button>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-primary-cinema" href="login.html">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -134,8 +138,112 @@
             <div class="container">
                 <span class="text-primary text-uppercase ls-2 fw-bold mb-3 d-block">The Visual Language</span>
                 <h1 class="display-1 fw-bold mb-4">Editorial <br><span class="italic">Cinema</span></h1>
-                <p class="lead text-muted mx-auto w-50">Exploring the intersection of light, shadow, and independent narrative through high-fidelity visual storytelling.</p>
+                <p class="lead text-muted mx-auto hero-lead-text">Exploring the intersection of light, shadow, and
+                    independent narrative through high-fidelity visual storytelling.</p>
                 <a href="#gallery" class="btn btn-cinema btn-outline-cinema mt-4">Browse Gallery</a>
+            </div>
+        </section>
+
+        <!-- Cinematic Gallery Section -->
+        <section class="section-padding bg-noir">
+            <div class="container">
+                <div class="row mb-5 text-center">
+                    <div class="col-lg-12">
+                        <span class="text-primary text-uppercase small ls-2 fw-bold mb-4 d-block">Visual Archive</span>
+                        <h2 class="h1">Cinematic <span class="italic">Moments</span></h2>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <!-- Optics Gallery Item -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="cinema-card h-100">
+                            <div class="card-img-container position-relative">
+                                <img src="assets/img/camopt2.jfif" loading="lazy" class="img-fluid w-100"
+                                    alt="Camera Optics">
+                                <div class="position-absolute bottom-0 start-0 p-4 w-100"
+                                    style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                                    <h4 class="h5 mb-1 text-white">Optics</h4>
+                                    <p class="small text-primary mb-0">Camera Operator</p>
+                                </div>
+                                <a href="#" class="stretched-link" aria-label="View Optics Gallery"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Production Gallery Item -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="cinema-card h-100">
+                            <div class="card-img-container position-relative">
+                                <img src="assets/img/prodsec2.jfif" loading="lazy" class="img-fluid w-100"
+                                    alt="Production Scene">
+                                <div class="position-absolute bottom-0 start-0 p-4 w-100"
+                                    style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                                    <h4 class="h5 mb-1 text-white">Production</h4>
+                                    <p class="small text-primary mb-0">Film Set</p>
+                                </div>
+                                <a href="#" class="stretched-link" aria-label="View Production Gallery"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sunset Scene Gallery Item -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="cinema-card h-100">
+                            <div class="card-img-container position-relative">
+                                <img src="assets/img/sunset2.jfif" loading="lazy" class="img-fluid w-100"
+                                    alt="Sunset Scene">
+                                <div class="position-absolute bottom-0 start-0 p-4 w-100"
+                                    style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                                    <h4 class="h5 mb-1 text-white">Sunset Scene</h4>
+                                    <p class="small text-primary mb-0">Golden Hour</p>
+                                </div>
+                                <a href="#" class="stretched-link" aria-label="View Sunset Gallery"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Atmosphere Gallery Item -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="cinema-card h-100">
+                            <div class="card-img-container position-relative">
+                                <img src="assets/img/Atmo2.jfif" loading="lazy" class="img-fluid w-100"
+                                    alt="Atmosphere">
+                                <div class="position-absolute bottom-0 start-0 p-4 w-100"
+                                    style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                                    <h4 class="h5 mb-1 text-white">Atmosphere</h4>
+                                    <p class="small text-primary mb-0">Mood Lighting</p>
+                                </div>
+                                <a href="#" class="stretched-link" aria-label="View Atmosphere Gallery"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience Detail Gallery Item -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="cinema-card h-100">
+                            <div class="card-img-container position-relative">
+                                <img src="assets/img/ed.jfif" loading="lazy" class="img-fluid w-100"
+                                    alt="Experience Detail">
+                                <div class="position-absolute bottom-0 start-0 p-4 w-100"
+                                    style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                                    <h4 class="h5 mb-1 text-white">Experience Detail</h4>
+                                    <p class="small text-primary mb-0">Close-up Shot</p>
+                                </div>
+                                <a href="#" class="stretched-link" aria-label="View Experience Gallery"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Film Reel Gallery Item -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="cinema-card h-100">
+                            <div class="card-img-container position-relative">
+                                <img src="assets/img/fr.jfif" loading="lazy" class="img-fluid w-100" alt="Film Reel">
+                                <div class="position-absolute bottom-0 start-0 p-4 w-100"
+                                    style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                                    <h4 class="h5 mb-1 text-white">Film Reel</h4>
+                                    <p class="small text-primary mb-0">Cinematic Montage</p>
+                                </div>
+                                <a href="#" class="stretched-link" aria-label="View Film Reel Gallery"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -149,22 +257,52 @@
                     </div>
                 </div>
                 <div class="row g-4 text-center">
-                    <div class="col-md-4">
-                        <div class="essay-card p-4 border border-dark h-100 bg-card-noir">
+                    <div class="col-md-6">
+                        <div class="essay-card p-4 border border-dark h-100 bg-card-noir d-flex flex-column">
+                            <div class="mb-3">
+                                <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=600&q=80"
+                                    loading="lazy" class="img-fluid rounded" alt="The Anatomy of Stillness">
+                            </div>
                             <h5 class="mb-3 italic">The Anatomy of Stillness</h5>
-                            <p class="text-muted small">Exploring the power of static frames in high-stakes drama.</p>
+                            <p class="text-muted small mb-4">Exploring the power of static frames in high-stakes drama.
+                            </p>
+                            <a href="blog-details.html" class="link-cinema mt-auto">Read Analysis</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="essay-card p-4 border border-dark h-100 bg-card-noir">
+                    <div class="col-md-6">
+                        <div class="essay-card p-4 border border-dark h-100 bg-card-noir d-flex flex-column">
+                            <div class="mb-3">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL3et5zdGQUbnq7usGespvXvX_ol-uuO9yaw&s"
+                                    loading="lazy" class="img-fluid rounded" alt="Golden Hour Monochrome">
+                            </div>
                             <h5 class="mb-3 italic">Golden Hour Monochrome</h5>
-                            <p class="text-muted small">A study on desaturated warmth during natural lighting transitions.</p>
+                            <p class="text-muted small mb-4">A study on desaturated warmth during natural lighting
+                                transitions.</p>
+                            <a href="blog-details.html" class="link-cinema mt-auto">Read Analysis</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="essay-card p-4 border border-dark h-100 bg-card-noir">
+                    <div class="col-md-6">
+                        <div class="essay-card p-4 border border-dark h-100 bg-card-noir d-flex flex-column">
+                            <div class="mb-3">
+                                <img src="https://i.pinimg.com/236x/69/cf/b0/69cfb073e438cf1d55756652be112100.jpg"
+                                    loading="lazy" class="img-fluid rounded" alt="The Noir Palette">
+                            </div>
                             <h5 class="mb-3 italic">The Noir Palette</h5>
-                            <p class="text-muted small">Technical breakdown of the 3-color cinematic noir system.</p>
+                            <p class="text-muted small mb-4">Technical breakdown of the 3-color cinematic noir system.
+                            </p>
+                            <a href="blog-details.html" class="link-cinema mt-auto">Read Analysis</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="essay-card p-4 border border-dark h-100 bg-card-noir d-flex flex-column">
+                            <div class="mb-3">
+                                <img src="assets/img/dg.jfif" loading="lazy" class="img-fluid rounded"
+                                    alt="Digital Grain">
+                            </div>
+                            <h5 class="mb-3 italic">The Digital Grain</h5>
+                            <p class="text-muted small mb-4">Mimicking organic film stock in an entirely digital 8K RAW
+                                pipeline.</p>
+                            <a href="blog-details.html" class="link-cinema mt-auto">Read Analysis</a>
                         </div>
                     </div>
                 </div>
@@ -175,41 +313,34 @@
         <section id="gallery" class="bg-noir">
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1520004434532-668416a08753?auto=format&fit=crop&w=800&q=80" alt="Lens Detail">
+                    <img src="https://images.unsplash.com/photo-1520004434532-668416a08753?auto=format&fit=crop&w=800&q=80"
+                        alt="Lens Detail">
                     <div class="gallery-overlay">
                         <span class="text-secondary fw-bold text-uppercase ls-2">Optics</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=800&q=80" alt="Camera Operator">
+                    <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=800&q=80"
+                        alt="Camera Operator">
                     <div class="gallery-overlay">
                         <span class="text-secondary fw-bold text-uppercase ls-2">Production</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1616530940355-351fabd9524b?auto=format&fit=crop&w=800&q=80" alt="Sunset Scene">
+                    <img src="https://images.unsplash.com/photo-1616530940355-351fabd9524b?auto=format&fit=crop&w=800&q=80"
+                        alt="Sunset Scene">
                     <div class="gallery-overlay">
                         <span class="text-secondary fw-bold text-uppercase ls-2">Atmosphere</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=800&q=80" alt="Experience Detail">
+                    <img src="https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=800&q=80"
+                        alt="Experience Detail">
                     <div class="gallery-overlay">
                         <span class="text-secondary fw-bold text-uppercase ls-2">Experience</span>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80" alt="Film Reel">
-                    <div class="gallery-overlay">
-                        <span class="text-secondary fw-bold text-uppercase ls-2">Archival</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=800&q=80" alt="Neon Cinema">
-                    <div class="gallery-overlay">
-                        <span class="text-secondary fw-bold text-uppercase ls-2">Futuristic</span>
-                    </div>
-                </div>
+
             </div>
         </section>
 
@@ -218,24 +349,32 @@
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
-                        <span class="text-primary text-uppercase small ls-2 fw-bold mb-3 d-block">Technical Artistry</span>
+                        <span class="text-primary text-uppercase small ls-2 fw-bold mb-3 d-block">Technical
+                            Artistry</span>
                         <h2 class="display-5 fw-bold mb-4">The Art of <br><span class="italic">Optics</span></h2>
-                        <p class="text-muted mb-4">In editorial cinema, the lens is our most powerful narrative tool. We meticulously select vintage glass and modern anamorphic optics to tell stories through texture and distortion.</p>
+                        <p class="text-muted mb-4">In editorial cinema, the lens is our most powerful narrative tool. We
+                            meticulously select vintage glass and modern anamorphic optics to tell stories through
+                            texture and distortion.</p>
                         <div class="row g-4 mt-2">
                             <div class="col-6">
                                 <h6 class="mb-2">Anamorphic Depth</h6>
-                                <p class="small text-muted">2.39:1 Aspect ratios with characteristic blue flares and oval bokeh.</p>
+                                <p class="small text-muted">2.39:1 Aspect ratios with characteristic blue flares and
+                                    oval bokeh.</p>
                             </div>
                             <div class="col-6">
                                 <h6 class="mb-2">Vintage Texture</h6>
-                                <p class="small text-muted">Soft roll-offs and organic grain for a timeless, painterly feel.</p>
+                                <p class="small text-muted">Soft roll-offs and organic grain for a timeless, painterly
+                                    feel.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80" class="img-fluid border border-dark" alt="Camera Lens Detail">
-                            <div class="position-absolute bottom-0 end-0 bg-primary p-3 translate-middle-y me-n4 d-none d-lg-block">
+                            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80"
+                                class="img-fluid border border-dark w-100" style="height: 450px; object-fit: cover;"
+                                alt="Camera Lens Detail">
+                            <div
+                                class="position-absolute bottom-0 end-0 bg-primary p-3 translate-middle-y me-n4 d-none d-lg-block">
                                 <span class="text-secondary fw-bold">Kowa Prominar Series</span>
                             </div>
                         </div>
@@ -255,25 +394,36 @@
                     <a href="#" class="btn btn-outline-cinema d-none d-md-inline-block">Full Schedule</a>
                 </div>
                 <div class="row g-4 text-center">
-                    <div class="col-lg-4">
-                        <div class="border border-dark p-4 h-100 scale-hover-noir bg-card-noir">
+                    <div class="col-lg-6">
+                        <div class="border border-dark p-4 h-100 scale-hover-noir bg-card-noir d-flex flex-column">
                             <span class="text-primary small fw-bold">OCT 2026</span>
                             <h4 class="mt-2 mb-3">Neon Shadows: A Digital Retrospective</h4>
-                            <p class="text-muted small mb-0">Museum of Modern Art (LACMA)</p>
+                            <p class="text-muted small mb-4">Museum of Modern Art (LACMA)</p>
+                            <a href="contact.html" class="link-cinema mt-auto">Book Tickets</a>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="border border-dark p-4 h-100 scale-hover-noir bg-card-noir">
+                    <div class="col-lg-6">
+                        <div class="border border-dark p-4 h-100 scale-hover-noir bg-card-noir d-flex flex-column">
                             <span class="text-primary small fw-bold">DEC 2026</span>
                             <h4 class="mt-2 mb-3">The Anamorphic Soul: Special Screening</h4>
-                            <p class="text-muted small mb-0">BFI Southbank, London</p>
+                            <p class="text-muted small mb-4">BFI Southbank, London</p>
+                            <a href="contact.html" class="link-cinema mt-auto">Book Tickets</a>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="border border-dark p-4 h-100 scale-hover-noir bg-card-noir">
+                    <div class="col-lg-6">
+                        <div class="border border-dark p-4 h-100 scale-hover-noir bg-card-noir d-flex flex-column">
                             <span class="text-primary small fw-bold">JAN 2027</span>
                             <h4 class="mt-2 mb-3">Editorial Frontiers: Gallery Tour</h4>
-                            <p class="text-muted small mb-0">Tokyo Photographic Art Museum</p>
+                            <p class="text-muted small mb-4">Tokyo Photographic Art Museum</p>
+                            <a href="contact.html" class="link-cinema mt-auto">Book Tickets</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="border border-dark p-4 h-100 scale-hover-noir bg-card-noir d-flex flex-column">
+                            <span class="text-primary small fw-bold">MAR 2027</span>
+                            <h4 class="mt-2 mb-3">Lumina Vision: Berlin Exhibition</h4>
+                            <p class="text-muted small mb-4">Kulturforum, Berlin</p>
+                            <a href="contact.html" class="link-cinema mt-auto">Book Tickets</a>
                         </div>
                     </div>
                 </div>
@@ -285,13 +435,18 @@
             <div class="container">
                 <div class="row align-items-center flex-row-reverse">
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <img src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?auto=format&fit=crop&w=800&q=80" class="img-fluid border border-dark w-100" style="max-height: 450px; object-fit: cover;" alt="Marcus Reed">
+                        <img src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?auto=format&fit=crop&w=800&q=80"
+                            class="img-fluid border border-dark w-100" style="max-height: 450px; object-fit: cover;"
+                            alt="Marcus Reed">
                     </div>
                     <div class="col-lg-5 offset-lg-1">
-                        <span class="text-primary text-uppercase small ls-2 fw-bold mb-3 d-block">Artist Spotlight</span>
+                        <span class="text-primary text-uppercase small ls-2 fw-bold mb-3 d-block">Artist
+                            Spotlight</span>
                         <h2 class="display-5 fw-bold mb-4">Marcus Reed</h2>
                         <h5 class="text-muted italic mb-4">Lead Cinematographer, Editorial Specialist</h5>
-                        <p class="text-muted mb-5">"Shadow is where the soul reveals itself. My goal is to use high-contrast lighting to create a visceral connection between the viewer and the internal struggle."</p>
+                        <p class="text-muted mb-5">"Shadow is where the soul reveals itself. My goal is to use
+                            high-contrast lighting to create a visceral connection between the viewer and the internal
+                            struggle."</p>
                         <div class="d-flex gap-4">
                             <a href="#" class="text-primary fs-4"><i class="bi bi-instagram"></i></a>
                             <a href="#" class="text-primary fs-4"><i class="bi bi-vimeo"></i></a>
@@ -307,10 +462,13 @@
             <div class="container py-5 text-center">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="display-5 mb-4">Ready to <span class="text-primary italic">Capture the Vision?</span></h2>
-                        <p class="text-muted mb-5">We are currently accepting inquiries for high-end editorial collaborations and gallery acquisitions for the 2026/27 slate.</p>
+                        <h2 class="display-5 mb-4">Ready to <span class="text-primary italic">Capture the Vision?</span>
+                        </h2>
+                        <p class="text-muted mb-5">We are currently accepting inquiries for high-end editorial
+                            collaborations and gallery acquisitions for the 2026/27 slate.</p>
                         <div class="d-flex justify-content-center gap-3">
-                            <a href="contact.html" class="btn btn-cinema btn-primary-cinema px-5">Start Collaboration</a>
+                            <a href="contact.html" class="btn btn-cinema btn-primary-cinema px-5">Start
+                                Collaboration</a>
                             <a href="pricing.html" class="btn btn-cinema btn-outline-cinema px-5">Investor Kit</a>
                         </div>
                     </div>
@@ -323,31 +481,52 @@
             <div class="container py-5">
                 <div class="row mb-5 text-center">
                     <div class="col-lg-8 mx-auto">
-                        <span class="text-primary text-uppercase small ls-3 fw-bold mb-3 d-block">Technical Excellence</span>
+                        <span class="text-primary text-uppercase small ls-3 fw-bold mb-3 d-block">Technical
+                            Excellence</span>
                         <h2 class="display-5 fw-bold mb-0">Studio <span class="italic">Capabilities</span></h2>
-                        <p class="text-muted mt-3">Advanced infrastructure supporting uncompromising artistic vision.</p>
+                        <p class="text-muted mt-3">Advanced infrastructure supporting uncompromising artistic vision.
+                        </p>
                     </div>
                 </div>
                 <div class="row g-4 text-center">
-                    <div class="col-md-4">
-                        <div class="capability-card p-5 border border-dark h-100 bg-card-noir scale-hover-noir">
+                    <div class="col-md-6">
+                        <div
+                            class="capability-card p-5 border border-dark h-100 bg-card-noir scale-hover-noir d-flex flex-column">
                             <i class="bi bi-camera-reels display-4 text-primary mb-4 d-block"></i>
                             <h4 class="mb-3">8K Anamorphic</h4>
-                            <p class="text-muted small mb-0">Best-in-class full-frame sensor capture equipped with vintage and modern anamorphic glass.</p>
+                            <p class="text-muted small mb-4">Best-in-class full-frame sensor capture equipped with
+                                vintage and modern anamorphic glass.</p>
+                            <a href="services.html" class="link-cinema mt-auto">Learn Tech</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="capability-card p-5 border border-dark h-100 bg-card-noir scale-hover-noir">
+                    <div class="col-md-6">
+                        <div
+                            class="capability-card p-5 border border-dark h-100 bg-card-noir scale-hover-noir d-flex flex-column">
                             <i class="bi bi-palette display-4 text-primary mb-4 d-block"></i>
                             <h4 class="mb-3">Color Science</h4>
-                            <p class="text-muted small mb-0">Private post-production suites featuring deep monitor calibration and HDR Dolby Vision grading.</p>
+                            <p class="text-muted small mb-4">Private post-production suites featuring deep monitor
+                                calibration and HDR Dolby Vision grading.</p>
+                            <a href="services.html" class="link-cinema mt-auto">Learn Tech</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="capability-card p-5 border border-dark h-100 bg-card-noir scale-hover-noir">
+                    <div class="col-md-6">
+                        <div
+                            class="capability-card p-5 border border-dark h-100 bg-card-noir scale-hover-noir d-flex flex-column">
                             <i class="bi bi-speaker display-4 text-primary mb-4 d-block"></i>
                             <h4 class="mb-3">Spatial Audio</h4>
-                            <p class="text-muted small mb-0">Immersive soundscapes designed and mixed in our custom-tuned Dolby Atmos theaters.</p>
+                            <p class="text-muted small mb-4">Immersive soundscapes designed and mixed in our
+                                custom-tuned Dolby Atmos theaters.</p>
+                            <a href="services.html" class="link-cinema mt-auto">Learn Tech</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div
+                            class="capability-card p-5 border border-dark h-100 bg-card-noir scale-hover-noir d-flex flex-column">
+                            <i class="bi bi-globe display-4 text-primary mb-4 d-block"></i>
+                            <h4 class="mb-3">Global Distribution</h4>
+                            <p class="text-muted small mb-4">End-to-end delivery systems for major streaming platforms
+                                and international theatrical release.</p>
+                            <a href="services.html" class="link-cinema mt-auto">Learn Tech</a>
                         </div>
                     </div>
                 </div>
@@ -358,18 +537,22 @@
     <footer class="section-padding py-5 border-top border-dark">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <a class="navbar-brand d-flex align-items-center gap-2 mb-4" href="index.html">
                         <div class="brand-text">
                             <span class="text-primary fw-bold letter-spacing-1">LUMINA</span>
                             <span class="text-theme fw-bold letter-spacing-1">CINEMA</span>
                         </div>
                     </a>
-                    <p class="text-muted mb-4 pe-lg-5">Redefining independent cinema through visual excellence and technical innovation. Join our visionary journey.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0" aria-label="Follow us on Twitter"><i class="bi bi-twitter fs-5"></i></a>
-                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0" aria-label="Follow us on Instagram"><i class="bi bi-instagram fs-5"></i></a>
-                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0" aria-label="Follow us on LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+                    <p class="text-muted mb-4 pe-lg-3">Redefining independent cinema through visual excellence and
+                        technical innovation.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0"
+                            aria-label="Follow us on Twitter"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0"
+                            aria-label="Follow us on Instagram"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0"
+                            aria-label="Follow us on LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
@@ -390,11 +573,22 @@
                         <li class="mb-2"><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-12">
-                    <h5 class="text-uppercase small ls-2 fw-bold mb-4 text-theme">Studio Headquarters</h5>
-                    <p class="text-muted mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> 1246 Cinema Plaza, North Hollywood, CA 91605</p>
-                    <p class="text-muted mb-2"><i class="bi bi-envelope text-primary me-2"></i> productions@lumina.film</p>
-                    <p class="text-muted mb-0"><i class="bi bi-telephone text-primary me-2"></i> +1 (555) 0199-CINEMA</p>
+                <div class="col-lg-2 col-md-12 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase small ls-2 fw-bold mb-4 text-theme">Studio</h5>
+                    <p class="text-muted small mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> North Hollywood, CA
+                        91605</p>
+                    <p class="text-muted small mb-2"><i class="bi bi-envelope text-primary me-2"></i> info@lumina.film
+                    </p>
+                    <p class="text-muted small mb-0"><i class="bi bi-telephone text-primary me-2"></i> +1 (555) 0199</p>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="footer-newsletter-wrap">
+                        <h5 class="mb-4">Newsletter</h5>
+                        <form class="footer-newsletter-input-group">
+                            <input type="email" placeholder="Email" required>
+                            <button type="submit">Join</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <hr class="border-secondary mt-5 pt-4">
@@ -416,5 +610,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-</html>
 
+</html>

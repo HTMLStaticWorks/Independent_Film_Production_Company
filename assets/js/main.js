@@ -88,12 +88,16 @@ document.addEventListener("DOMContentLoaded", () => {
         if (savedTheme === 'light') {
             body.classList.add('light-theme');
             if (themeIcon) themeIcon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
+            themeToggle.classList.add('active');
         }
 
         themeToggle.addEventListener('click', () => {
             body.classList.toggle('light-theme');
             const isLight = body.classList.contains('light-theme');
             localStorage.setItem('theme', isLight ? 'light' : 'dark');
+            
+            // Toggle active state
+            themeToggle.classList.toggle('active');
             
             if (themeIcon) {
                 if (isLight) {
@@ -108,18 +112,26 @@ document.addEventListener("DOMContentLoaded", () => {
     // 7. RTL Toggle Logic
     const rtlToggle = document.getElementById('rtlToggle');
     if (rtlToggle) {
+        // Check for saved direction
+        const savedDir = localStorage.getItem('dir');
+        if (savedDir === 'rtl') {
+            document.documentElement.setAttribute('dir', 'rtl');
+            rtlToggle.classList.add('active');
+            rtlToggle.textContent = 'RTL';
+        } else {
+            rtlToggle.textContent = 'LTR';
+        }
+
         rtlToggle.addEventListener('click', () => {
             const currentDir = document.documentElement.getAttribute('dir') || 'ltr';
             const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
             document.documentElement.setAttribute('dir', newDir);
             localStorage.setItem('dir', newDir);
+            
+            // Toggle active state and text
+            rtlToggle.classList.toggle('active');
+            rtlToggle.textContent = newDir.toUpperCase();
         });
-    }
-
-    // Check for saved direction
-    const savedDir = localStorage.getItem('dir');
-    if (savedDir) {
-        document.documentElement.setAttribute('dir', savedDir);
     }
 
     // 8. Initialize Bootstrap Tooltips & Popovers
@@ -132,4 +144,31 @@ document.addEventListener("DOMContentLoaded", () => {
     popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl);
     });
+
+    // 9. Back to Top Button
+    const createBackToTop = () => {
+        const btn = document.createElement('button');
+        btn.id = 'backToTop';
+        btn.className = 'back-to-top';
+        btn.setAttribute('aria-label', 'Back to Top');
+        btn.innerHTML = '<i class="bi bi-chevron-up"></i>';
+        document.body.appendChild(btn);
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+
+        btn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    };
+
+    createBackToTop();
 });

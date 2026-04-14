@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Neon Shadows poster</title>
+  <desc id="desc">A neon-lit sci-fi poster for Neon Shadows.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#04070b"/>
+      <stop offset="50%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#020203"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" x2="1">
+      <stop offset="0%" stop-color="#30d5ff"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect x="520" y="0" width="70" height="500" fill="#0a0f19" opacity="0.75"/>
+  <rect x="610" y="0" width="26" height="500" fill="#30d5ff" opacity="0.22"/>
+  <rect x="660" y="0" width="12" height="500" fill="#d4af37" opacity="0.3"/>
+  <path d="M90 420L250 170L350 270L500 86" stroke="url(#neon)" stroke-width="9" fill="none"/>
+  <circle cx="501" cy="86" r="12" fill="#d4af37"/>
+  <text x="56" y="104" fill="#7fe8ff" font-family="Arial, sans-serif" font-size="26" letter-spacing="7">SCI-FI / ACTION</text>
+  <text x="54" y="348" fill="#ffffff" font-family="Arial, sans-serif" font-size="72" font-weight="800">NEON</text>
+  <text x="54" y="422" fill="#ffffff" font-family="Arial, sans-serif" font-size="72" font-weight="800">SHADOWS</text>
+  <text x="58" y="462" fill="#d4af37" font-family="Arial, sans-serif" font-size="24" letter-spacing="6">FEATURE FILM / 2023</text>
+</svg>

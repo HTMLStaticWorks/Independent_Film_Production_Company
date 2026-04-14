@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
     <title>Our Productions | Lumina Cinema</title>
-    
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Explore our wide range of independent film productions, including feature films, award-winning shorts, and cinematic commercials.">
+    <meta name="description"
+        content="Explore our wide range of independent film productions, including feature films, award-winning shorts, and cinematic commercials.">
     <meta name="keywords" content="Feature Films, Short Films, Cinematic Services, Lumina Cinema Productions">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap 5 & Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,27 +37,22 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 20px;
-            background: transparent;
+            font-weight: 600;
         }
-        .service-category.active, .service-category:hover {
+
+        .service-category.active,
+        .service-category:hover {
             border-color: var(--primary);
             color: var(--primary);
-        }
-        .services-hero {
-            background: #ffffff;
-            color: var(--text-theme);
-            border-bottom: 1px solid var(--border-color);
-            margin-bottom: var(--space-5);
-        }
-        .services-hero .lead {
-            color: rgba(26, 26, 26, 0.8);
+            font-weight: 600;
         }
     </style>
 </head>
+
 <body class="bg-noir">
 
 
-<header>
+    <header>
         <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
@@ -62,16 +61,20 @@
                         <span class="text-theme fw-bold letter-spacing-1">CINEMA</span>
                     </div>
                 </a>
-                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <i class="bi bi-list text-theme fs-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navMenu">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Home
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-dark bg-noir border-secondary" aria-labelledby="homeDropdown">
+                            <ul class="dropdown-menu dropdown-menu-dark bg-noir border-secondary"
+                                aria-labelledby="homeDropdown">
                                 <li><a class="dropdown-item py-2" href="index.html">Home 1</a></li>
                                 <li><a class="dropdown-item py-2" href="home-2.html">Home 2</a></li>
                             </ul>
@@ -91,16 +94,14 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
-                                                <li class="nav-item ms-lg-3">
-                            <div class="nav-controls-stack">
-                                <button id="themeToggle" class="btn btn-outline-cinema p-1 border-0" title="Toggle Theme">
-                                    <i class="bi bi-moon-stars-fill text-primary fs-5"></i>
-                                </button>
-                                <button id="rtlToggle" class="btn btn-outline-cinema p-1 border-0" title="Toggle RTL" aria-label="Toggle RTL direction">
-                                    <span class="rtl-label" aria-hidden="true">RTL</span>
-                                </button>
-                                <a class="btn btn-primary-cinema" href="login.html">Log in</a>
-                            </div>
+                        <li class="nav-item ms-lg-3 d-flex align-items-center gap-2">
+                            <button id="themeToggle" class="btn btn-outline-cinema p-1 border-0" title="Toggle Theme">
+                                <i class="bi bi-moon-stars-fill text-primary fs-5"></i>
+                            </button>
+                            <button id="rtlToggle" class="btn btn-outline-cinema p-1 border-0" title="Toggle RTL">LTR</button>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-primary-cinema" href="login.html">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -110,11 +111,14 @@
 
     <main>
         <!-- Page Header -->
-        <section class="section-padding services-hero position-relative overflow-hidden">
-            <div class="container text-center pt-5">
-                <h1 class="display-3 fw-bold mb-3">Our Productions</h1>
-                <p class="lead mx-auto w-75 mb-5">From epic features to experimental shorts, our production house specializes in high-fidelity visual storytelling across all formats.</p>
-                
+        <section class="hero-cinema bg-dark-always position-relative"
+            style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=1920&q=80') center/center no-repeat; background-size: cover;">
+            <div class="container text-center hero-content">
+                <h1 class="display-3 fw-bold mb-3 text-white hero-title">Our Productions</h1>
+                <p class="lead text-white-always mx-auto hero-lead-text mb-5 opacity-75">From epic features to
+                    experimental shorts, our production house specializes in high-fidelity visual storytelling across
+                    all formats.</p>
+
                 <div class="d-flex flex-wrap justify-content-center">
                     <span class="service-category active">All Works</span>
                     <span class="service-category">Feature Films</span>
@@ -123,93 +127,131 @@
                     <span class="service-category">Documentaries</span>
                 </div>
             </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator" onclick="window.scrollTo({top: window.innerHeight, behavior: 'smooth'})">
+                <span>Works</span>
+                <div class="mouse-icon">
+                    <div class="mouse-wheel"></div>
+                </div>
+            </div>
         </section>
 
         <!-- Productions Grid -->
-        <section class="section-padding pt-5 mt-3">
+        <section class="section-padding pt-0">
             <div class="container">
                 <div class="row g-4 productions-grid">
                     <!-- Film 1 -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-6">
                         <div class="cinema-card">
                             <div class="card-img-container position-relative">
-                                <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=800&q=80" loading="lazy" class="img-fluid w-100" alt="The Silent Echo">
-                                <div class="position-absolute top-0 end-0 m-3 px-3 py-1 bg-primary text-secondary small fw-bold text-uppercase">Drama</div>
+                                <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=800&q=80"
+                                    loading="lazy" class="img-fluid w-100" alt="The Silent Echo">
+                                <div
+                                    class="position-absolute top-0 end-0 m-3 px-3 py-1 bg-primary text-secondary small fw-bold text-uppercase">
+                                    Drama</div>
                             </div>
-                            <div class="p-4">
+                            <div class="p-4 d-flex flex-column flex-grow-1">
                                 <h4 class="mb-2">The Silent Echo</h4>
-                                <p class="text-muted small mb-4 line-clamp-2">A gripping drama exploring the weight of secrets in a remote mountain village. Currently touring global film festivals.</p>
-                                <a href="service-details.html" class="btn btn-cinema btn-outline-cinema w-100">View Project</a>
+                                <p class="text-muted small mb-4 line-clamp-2">A gripping drama exploring the weight of
+                                    secrets in a remote mountain village. Currently touring global film festivals.</p>
+                                <a href="service-details.html"
+                                    class="btn btn-cinema btn-outline-cinema w-100 mt-auto">View Project</a>
                             </div>
                         </div>
                     </div>
                     <!-- Film 2 -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-6">
                         <div class="cinema-card">
                             <div class="card-img-container position-relative">
-                                <img src="https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=800&q=80" loading="lazy" class="img-fluid w-100" alt="Noir Nights">
-                                <div class="position-absolute top-0 end-0 m-3 px-3 py-1 bg-primary text-secondary small fw-bold text-uppercase">Noir</div>
+                                <img src="https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=800&q=80"
+                                    loading="lazy" class="img-fluid w-100" alt="Noir Nights">
+                                <div
+                                    class="position-absolute top-0 end-0 m-3 px-3 py-1 bg-primary text-secondary small fw-bold text-uppercase">
+                                    Noir</div>
                             </div>
-                            <div class="p-4">
+                            <div class="p-4 d-flex flex-column flex-grow-1">
                                 <h4 class="mb-2">Noir Nights</h4>
-                                <p class="text-muted small mb-4 line-clamp-2">A stylistic dive into the underworld of a neon-lit city where every shadow has a price.</p>
-                                <a href="service-details.html" class="btn btn-cinema btn-outline-cinema w-100">View Project</a>
+                                <p class="text-muted small mb-4 line-clamp-2">A stylistic dive into the underworld of a
+                                    neon-lit city where every shadow has a price.</p>
+                                <a href="service-details.html"
+                                    class="btn btn-cinema btn-outline-cinema w-100 mt-auto">View Project</a>
                             </div>
                         </div>
                     </div>
                     <!-- Film 3 -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-6">
                         <div class="cinema-card">
                             <div class="card-img-container position-relative">
-                                <img src="https://images.unsplash.com/photo-1551244072-5d12893278ab?auto=format&fit=crop&w=800&q=80" loading="lazy" class="img-fluid w-100" alt="Ocean's Breath">
-                                <div class="position-absolute top-0 end-0 m-3 px-3 py-1 bg-primary text-secondary small fw-bold text-uppercase">Docu</div>
+                                <img src="https://images.unsplash.com/photo-1551244072-5d12893278ab?auto=format&fit=crop&w=800&q=80"
+                                    loading="lazy" class="img-fluid w-100" alt="Ocean's Breath">
+                                <div
+                                    class="position-absolute top-0 end-0 m-3 px-3 py-1 bg-primary text-secondary small fw-bold text-uppercase">
+                                    Docu</div>
                             </div>
-                            <div class="p-4">
+                            <div class="p-4 d-flex flex-column flex-grow-1">
                                 <h4 class="mb-2">Ocean's Breath</h4>
-                                <p class="text-muted small mb-4 line-clamp-2">A breathtaking documentary following the migration of the world's most elusive marine life.</p>
-                                <a href="service-details.html" class="btn btn-cinema btn-outline-cinema w-100">View Project</a>
+                                <p class="text-muted small mb-4 line-clamp-2">A breathtaking documentary following the
+                                    migration of the world's most elusive marine life.</p>
+                                <a href="service-details.html"
+                                    class="btn btn-cinema btn-outline-cinema w-100 mt-auto">View Project</a>
                             </div>
                         </div>
                     </div>
                     <!-- Film 4 -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-6">
                         <div class="cinema-card">
                             <div class="card-img-container position-relative">
-                                <img src="https://images.unsplash.com/photo-1505322022379-7c3353ee6291?auto=format&fit=crop&w=800&q=80" loading="lazy" class="img-fluid w-100" alt="Ghost Lens">
-                                <div class="position-absolute top-0 end-0 m-3 px-3 py-1 bg-primary text-secondary small fw-bold text-uppercase">Horror</div>
+                                <img src="https://images.unsplash.com/photo-1505322022379-7c3353ee6291?auto=format&fit=crop&w=800&q=80"
+                                    loading="lazy" class="img-fluid w-100" alt="Ghost Lens">
+                                <div
+                                    class="position-absolute top-0 end-0 m-3 px-3 py-1 bg-primary text-secondary small fw-bold text-uppercase">
+                                    Horror</div>
                             </div>
-                            <div class="p-4">
+                            <div class="p-4 d-flex flex-column flex-grow-1">
                                 <h4 class="mb-2">Ghost Lens</h4>
-                                <p class="text-muted small mb-4 line-clamp-2">When a vintage camera starts showing things that shouldn't exist, a young photographer's reality unravels.</p>
-                                <a href="service-details.html" class="btn btn-cinema btn-outline-cinema w-100">View Project</a>
+                                <p class="text-muted small mb-4 line-clamp-2">When a vintage camera starts showing
+                                    things that shouldn't exist, a young photographer's reality unravels.</p>
+                                <a href="service-details.html"
+                                    class="btn btn-cinema btn-outline-cinema w-100 mt-auto">View Project</a>
                             </div>
                         </div>
                     </div>
                     <!-- Film 5 -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-6">
                         <div class="cinema-card">
                             <div class="card-img-container position-relative">
-                                <img src="https://images.unsplash.com/photo-1520004434532-668416a08753?auto=format&fit=crop&w=800&q=80" loading="lazy" class="img-fluid w-100" alt="Rhythm of the Set">
-                                <div class="position-absolute top-0 end-0 m-3 px-3 py-1 bg-primary text-secondary small fw-bold text-uppercase">BTS</div>
+                                <img src="https://images.unsplash.com/photo-1520004434532-668416a08753?auto=format&fit=crop&w=800&q=80"
+                                    loading="lazy" class="img-fluid w-100" alt="Rhythm of the Set">
+                                <div
+                                    class="position-absolute top-0 end-0 m-3 px-3 py-1 bg-primary text-secondary small fw-bold text-uppercase">
+                                    BTS</div>
                             </div>
-                            <div class="p-4">
+                            <div class="p-4 d-flex flex-column flex-grow-1">
                                 <h4 class="mb-2">Rhythm of the Set</h4>
-                                <p class="text-muted small mb-4 line-clamp-2">An intimate look behind the camera, exploring the orchestrated chaos of a million-dollar film set.</p>
-                                <a href="service-details.html" class="btn btn-cinema btn-outline-cinema w-100">View Project</a>
+                                <p class="text-muted small mb-4 line-clamp-2">An intimate look behind the camera,
+                                    exploring the orchestrated chaos of a million-dollar film set.</p>
+                                <a href="service-details.html"
+                                    class="btn btn-cinema btn-outline-cinema w-100 mt-auto">View Project</a>
                             </div>
                         </div>
                     </div>
                     <!-- Film 6 -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-6">
                         <div class="cinema-card">
                             <div class="card-img-container position-relative">
-                                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" loading="lazy" class="img-fluid w-100" alt="Digital Pulse">
-                                <div class="position-absolute top-0 end-0 m-3 px-3 py-1 bg-primary text-secondary small fw-bold text-uppercase">Sci-Fi</div>
+                                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80"
+                                    loading="lazy" class="img-fluid w-100" alt="Digital Pulse">
+                                <div
+                                    class="position-absolute top-0 end-0 m-3 px-3 py-1 bg-primary text-secondary small fw-bold text-uppercase">
+                                    Sci-Fi</div>
                             </div>
-                            <div class="p-4">
+                            <div class="p-4 d-flex flex-column flex-grow-1">
                                 <h4 class="mb-2">Digital Pulse</h4>
-                                <p class="text-muted small mb-4 line-clamp-2">In a future where memory is currency, one man risks everything to find a lost childhood dream.</p>
-                                <a href="service-details.html" class="btn btn-cinema btn-outline-cinema w-100">View Project</a>
+                                <p class="text-muted small mb-4 line-clamp-2">In a future where memory is currency, one
+                                    man risks everything to find a lost childhood dream.</p>
+                                <a href="service-details.html"
+                                    class="btn btn-cinema btn-outline-cinema w-100 mt-auto">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -224,29 +266,45 @@
                     <div class="col-lg-12">
                         <span class="text-primary text-uppercase small ls-2 fw-bold">Creative Method</span>
                         <h2 class="display-5 mb-4">Our Production Ecosystem</h2>
-                        <p class="text-muted mx-auto w-50 mb-5">A streamlined, end-to-end workflow that transforms visionary concepts into cinematic realities.</p>
+                        <p class="text-muted mx-auto w-50 mb-5">A streamlined, end-to-end workflow that transforms
+                            visionary concepts into cinematic realities.</p>
                     </div>
                 </div>
                 <div class="row g-4 justify-content-center">
-                    <div class="col-md-4 text-center">
-                        <div class="p-5 bg-card-noir border border-dark h-100">
+                    <div class="col-md-6 text-center">
+                        <div class="p-5 bg-card-noir border border-dark h-100 d-flex flex-column">
                             <i class="bi bi-layers text-primary fs-1 mb-4 d-block"></i>
                             <h4 class="mb-3 italic">Pre-Production</h4>
-                            <p class="text-muted small mb-0">From script doctoring and world-building to location scouting and storyboard visualization.</p>
+                            <p class="text-muted small mb-4">From script doctoring and world-building to location
+                                scouting and storyboard visualization.</p>
+                            <a href="contact.html" class="link-cinema mt-auto">Inquire Service</a>
                         </div>
                     </div>
-                    <div class="col-md-4 text-center">
-                        <div class="p-5 bg-card-noir border border-dark h-100">
+                    <div class="col-md-6 text-center">
+                        <div class="p-5 bg-card-noir border border-dark h-100 d-flex flex-column">
                             <i class="bi bi-camera-reels text-primary fs-1 mb-4 d-block"></i>
                             <h4 class="mb-3 italic">Production</h4>
-                            <p class="text-muted small mb-0">On-set excellence with elite crews, premium cinematic equipment, and tactical set management.</p>
+                            <p class="text-muted small mb-4">On-set excellence with elite crews, premium cinematic
+                                equipment, and tactical set management.</p>
+                            <a href="contact.html" class="link-cinema mt-auto">Inquire Service</a>
                         </div>
                     </div>
-                    <div class="col-md-4 text-center">
-                        <div class="p-5 bg-card-noir border border-dark h-100">
+                    <div class="col-md-6 text-center">
+                        <div class="p-5 bg-card-noir border border-dark h-100 d-flex flex-column">
                             <i class="bi bi-magic text-primary fs-1 mb-4 d-block"></i>
                             <h4 class="mb-3 italic">Post-Production</h4>
-                            <p class="text-muted small mb-0">Advanced color grading, Dolby sound design, and AI-driven VFX integration in our private suites.</p>
+                            <p class="text-muted small mb-4">Advanced color grading, Dolby sound design, and AI-driven
+                                VFX integration in our private suites.</p>
+                            <a href="contact.html" class="link-cinema mt-auto">Inquire Service</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div class="p-5 bg-card-noir border border-dark h-100 d-flex flex-column">
+                            <i class="bi bi-megaphone text-primary fs-1 mb-4 d-block"></i>
+                            <h4 class="mb-3 italic">Marketing & PR</h4>
+                            <p class="text-muted small mb-4">Strategic festival submissions, trailer cutting, and
+                                high-impact press campaigns to build global momentum.</p>
+                            <a href="contact.html" class="link-cinema mt-auto">Inquire Service</a>
                         </div>
                     </div>
                 </div>
@@ -259,14 +317,19 @@
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6">
                         <div class="position-relative overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=1200&q=80" loading="lazy" class="img-fluid border border-dark shadow-lg" alt="Lumina Studio Facilities">
-                            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(45deg, rgba(212,175,55,0.1), transparent);"></div>
+                            <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=1200&q=80"
+                                loading="lazy" class="img-fluid border border-dark shadow-lg"
+                                alt="Lumina Studio Facilities">
+                            <div class="position-absolute top-0 start-0 w-100 h-100"
+                                style="background: linear-gradient(45deg, rgba(212,175,55,0.1), transparent);"></div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <span class="text-primary text-uppercase small ls-2 fw-bold mb-3 d-block">The Infrastructure</span>
+                        <span class="text-primary text-uppercase small ls-2 fw-bold mb-3 d-block">The
+                            Infrastructure</span>
                         <h3 class="display-6 italic mb-4 text-theme">Technical Infrastructure</h3>
-                        <p class="text-muted mb-5">Our studio is equipped with industry-leading technology to ensure every frame meets the highest standards of modern cinema.</p>
+                        <p class="text-muted mb-5">Our studio is equipped with industry-leading technology to ensure
+                            every frame meets the highest standards of modern cinema.</p>
                         <div class="row g-4">
                             <div class="col-sm-6 text-theme">
                                 <div class="d-flex align-items-center gap-3">
@@ -314,7 +377,8 @@
         <section class="section-padding bg-card-noir">
             <div class="container text-center">
                 <h2 class="mb-4">Ready to Invest in Our Next Vision?</h2>
-                <p class="text-muted mb-5 mx-auto w-50">Explore our investment tiers and become a partner in the next award-winning production from Lumina Cinema.</p>
+                <p class="text-muted mb-5 mx-auto w-50">Explore our investment tiers and become a partner in the next
+                    award-winning production from Lumina Cinema.</p>
                 <div class="d-flex justify-content-center gap-3">
                     <a href="pricing.html" class="btn btn-cinema btn-primary-cinema">Investment Tiers</a>
                     <a href="contact.html" class="btn btn-cinema btn-outline-cinema">Inquire Now</a>
@@ -333,11 +397,15 @@
                             <span class="text-theme fw-bold letter-spacing-1">CINEMA</span>
                         </div>
                     </a>
-                    <p class="text-muted mb-4 pe-lg-3">Redefining independent cinema through visual excellence and technical innovation.</p>
+                    <p class="text-muted mb-4 pe-lg-3">Redefining independent cinema through visual excellence and
+                        technical innovation.</p>
                     <div class="d-flex gap-2">
-                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0" aria-label="Follow us on Twitter"><i class="bi bi-twitter fs-5"></i></a>
-                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0" aria-label="Follow us on Instagram"><i class="bi bi-instagram fs-5"></i></a>
-                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0" aria-label="Follow us on LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0"
+                            aria-label="Follow us on Twitter"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0"
+                            aria-label="Follow us on Instagram"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0"
+                            aria-label="Follow us on LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
@@ -360,8 +428,10 @@
                 </div>
                 <div class="col-lg-2 col-md-12 mb-4 mb-lg-0">
                     <h5 class="text-uppercase small ls-2 fw-bold mb-4 text-theme">Studio</h5>
-                    <p class="text-muted small mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> North Hollywood, CA 91605</p>
-                    <p class="text-muted small mb-2"><i class="bi bi-envelope text-primary me-2"></i> info@lumina.film</p>
+                    <p class="text-muted small mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> North Hollywood, CA
+                        91605</p>
+                    <p class="text-muted small mb-2"><i class="bi bi-envelope text-primary me-2"></i> info@lumina.film
+                    </p>
                     <p class="text-muted small mb-0"><i class="bi bi-telephone text-primary me-2"></i> +1 (555) 0199</p>
                 </div>
                 <div class="col-lg-3 col-md-12">
@@ -393,5 +463,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-</html>
 
+</html>

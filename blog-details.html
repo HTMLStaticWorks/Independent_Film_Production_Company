@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
     <title>The Art of the Long Take | Journal | Lumina Cinema</title>
-    
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="A deep dive into the technical and psychological challenges of implementing long-take sequences in independent film.">
+    <meta name="description"
+        content="A deep dive into the technical and psychological challenges of implementing long-take sequences in independent film.">
     <meta name="keywords" content="Directing, Long Take, Film Technique, Julian Thorne">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap 5 & Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -21,10 +25,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body class="bg-noir">
 
 
-<header>
+    <header>
         <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
@@ -33,16 +38,20 @@
                         <span class="text-theme fw-bold letter-spacing-1">CINEMA</span>
                     </div>
                 </a>
-                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <i class="bi bi-list text-theme fs-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navMenu">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Home Pages
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-dark bg-noir border-secondary" aria-labelledby="homeDropdown">
+                            <ul class="dropdown-menu dropdown-menu-dark bg-noir border-secondary"
+                                aria-labelledby="homeDropdown">
                                 <li><a class="dropdown-item py-2" href="index.html">Home 1</a></li>
                                 <li><a class="dropdown-item py-2" href="home-2.html">Home 2</a></li>
                             </ul>
@@ -62,16 +71,14 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
-                                                <li class="nav-item ms-lg-3">
-                            <div class="nav-controls-stack">
-                                <button id="themeToggle" class="btn btn-outline-cinema p-1 border-0" title="Toggle Theme">
-                                    <i class="bi bi-moon-stars-fill text-primary fs-5"></i>
-                                </button>
-                                <button id="rtlToggle" class="btn btn-outline-cinema p-1 border-0" title="Toggle RTL" aria-label="Toggle RTL direction">
-                                    <span class="rtl-label" aria-hidden="true">RTL</span>
-                                </button>
-                                <a class="btn btn-primary-cinema" href="login.html">Log in</a>
-                            </div>
+                        <li class="nav-item ms-lg-3 d-flex align-items-center gap-2">
+                            <button id="themeToggle" class="btn btn-outline-cinema p-1 border-0" title="Toggle Theme">
+                                <i class="bi bi-moon-stars-fill text-primary fs-5"></i>
+                            </button>
+                            <button id="rtlToggle" class="btn btn-outline-cinema p-1 border-0" title="Toggle RTL">LTR</button>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-primary-cinema" href="login.html">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -88,7 +95,8 @@
                         <span class="text-primary small fw-bold text-uppercase d-block mb-3">Feature | Directing</span>
                         <h1 class="display-4 fw-bold mb-4">The Art of the Long Take: Narrative and Rhythm</h1>
                         <div class="d-flex align-items-center mt-4 pt-4 border-top border-dark">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=50&q=80" class="rounded-circle me-3" alt="Author">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=50&q=80"
+                                class="rounded-circle me-3" alt="Author">
                             <div>
                                 <h6 class="mb-0 text-white">Julian Thorne</h6>
                                 <p class="small text-muted mb-0">Published March 24, 2026 • 8 min read</p>
@@ -97,24 +105,40 @@
 
                         <!-- Content -->
                         <div class="article-content text-muted lead lh-lg mb-5">
-                            <p class="mb-4">The long take is perhaps one of the most polarizing tools in a director's arsenal. When executed well, it creates an unparalleled sense of immersion, pulling the audience directly into the spatial reality of the scene. When it fails, it becomes an exercise in technical masturbation, drawing attention away from the narrative and toward the camera's gymnastics.</p>
-                            
-                            <img src="https://images.unsplash.com/photo-1520004434532-668416a08753?auto=format&fit=crop&w=1200&q=80" class="img-fluid border border-dark mb-5" alt="Camera Setup">
+                            <p class="mb-4">The long take is perhaps one of the most polarizing tools in a director's
+                                arsenal. When executed well, it creates an unparalleled sense of immersion, pulling the
+                                audience directly into the spatial reality of the scene. When it fails, it becomes an
+                                exercise in technical masturbation, drawing attention away from the narrative and toward
+                                the camera's gymnastics.</p>
+
+                            <img src="https://images.unsplash.com/photo-1520004434532-668416a08753?auto=format&fit=crop&w=1200&q=80"
+                                class="img-fluid border border-dark mb-5" alt="Camera Setup">
 
                             <h3 class="text-white mb-4">1. Technical Choreography</h3>
-                            <p class="mb-4">Executing a six-minute sequence without a cut requires a level of coordination akin to a ballet. The camera operator, focus puller, actors, and lighting department must move in perfect synchronicity. In our recent production, 'The Silent Echo', we spent three days rehearsing a single shot through the clockmaker's workshop.</p>
-                            
+                            <p class="mb-4">Executing a six-minute sequence without a cut requires a level of
+                                coordination akin to a ballet. The camera operator, focus puller, actors, and lighting
+                                department must move in perfect synchronicity. In our recent production, 'The Silent
+                                Echo', we spent three days rehearsing a single shot through the clockmaker's workshop.
+                            </p>
+
                             <blockquote class="border-start border-primary border-4 ps-4 my-5 italic text-white h4">
-                                "The camera should never move just because it can; it should move because the character's internal state demands it."
+                                "The camera should never move just because it can; it should move because the
+                                character's internal state demands it."
                             </blockquote>
 
                             <h3 class="text-white mb-4">2. The Psychological Impact</h3>
-                            <p class="mb-4">Without the relief of a cut, the audience's tension builds naturally. There is no escape from the frame. This creates a specific kind of 'real-time' intimacy that is nearly impossible to replicate through traditional editing. We use these moments to anchor the audience during critical character realizations.</p>
-                            
-                            <p class="mb-4">However, the long take is also about rhythm. Just because the camera is running doesn't mean the scene lacks tempo. The movement within the frame—and the camera's speed—must fluctuate to maintain interest.</p>
+                            <p class="mb-4">Without the relief of a cut, the audience's tension builds naturally. There
+                                is no escape from the frame. This creates a specific kind of 'real-time' intimacy that
+                                is nearly impossible to replicate through traditional editing. We use these moments to
+                                anchor the audience during critical character realizations.</p>
+
+                            <p class="mb-4">However, the long take is also about rhythm. Just because the camera is
+                                running doesn't mean the scene lacks tempo. The movement within the frame—and the
+                                camera's speed—must fluctuate to maintain interest.</p>
 
                             <!-- Social Share -->
-                            <div class="mt-5 pt-5 border-top border-dark d-flex align-items-center justify-content-between">
+                            <div
+                                class="mt-5 pt-5 border-top border-dark d-flex align-items-center justify-content-between">
                                 <h6 class="mb-0 text-white text-uppercase small ls-2">Share this story</h6>
                                 <div class="d-flex gap-3 px-3">
                                     <a href="#" class="text-muted"><i class="bi bi-facebook fs-5"></i></a>
@@ -148,26 +172,30 @@
         </article>
     </main>
 
-        <!-- Newsletter CTA -->
-        <section class="section-padding bg-noir overflow-hidden position-relative">
-            <div class="container text-center py-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="display-5 mb-4 italic">Join the Inner Circle</h2>
-                        <p class="text-muted mb-5">Subscribe to get exclusive behind-the-scenes content and early access to investor opportunities.</p>
-                        <form class="row g-2 justify-content-center needs-validation" novalidate>
-                            <div class="col-md-7">
-                                <input type="email" class="form-control bg-dark text-white border-secondary rounded-0 py-3 px-4" placeholder="Enter your email address" required>
-                                <div class="invalid-feedback text-start">Please provide a valid email.</div>
-                            </div>
-                            <div class="col-md-3">
-                                <button type="submit" class="btn btn-cinema btn-primary-cinema w-100 h-100">Subscribe</button>
-                            </div>
-                        </form>
-                    </div>
+    <!-- Newsletter CTA -->
+    <section class="section-padding bg-noir overflow-hidden position-relative">
+        <div class="container text-center py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 mb-4 italic">Join the Inner Circle</h2>
+                    <p class="text-muted mb-5">Subscribe to get exclusive behind-the-scenes content and early access to
+                        investor opportunities.</p>
+                    <form class="row g-2 justify-content-center needs-validation" novalidate>
+                        <div class="col-md-7">
+                            <input type="email"
+                                class="form-control bg-dark text-white border-secondary rounded-0 py-3 px-4"
+                                placeholder="Enter your email address" required>
+                            <div class="invalid-feedback text-start">Please provide a valid email.</div>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit"
+                                class="btn btn-cinema btn-primary-cinema w-100 h-100">Subscribe</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     </main>
     <!-- Footer Section -->
     <footer class="section-padding py-5 border-top border-dark">
@@ -180,11 +208,15 @@
                             <span class="text-theme fw-bold letter-spacing-1">CINEMA</span>
                         </div>
                     </a>
-                    <p class="text-muted mb-4 pe-lg-3">Redefining independent cinema through visual excellence and technical innovation.</p>
+                    <p class="text-muted mb-4 pe-lg-3">Redefining independent cinema through visual excellence and
+                        technical innovation.</p>
                     <div class="d-flex gap-2">
-                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0" aria-label="Follow us on Twitter"><i class="bi bi-twitter fs-5"></i></a>
-                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0" aria-label="Follow us on Instagram"><i class="bi bi-instagram fs-5"></i></a>
-                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0" aria-label="Follow us on LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0"
+                            aria-label="Follow us on Twitter"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0"
+                            aria-label="Follow us on Instagram"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="btn btn-outline-cinema p-2 lh-1 border-0"
+                            aria-label="Follow us on LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
@@ -207,8 +239,10 @@
                 </div>
                 <div class="col-lg-2 col-md-12 mb-4 mb-lg-0">
                     <h5 class="text-uppercase small ls-2 fw-bold mb-4 text-theme">Studio</h5>
-                    <p class="text-muted small mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> North Hollywood, CA 91605</p>
-                    <p class="text-muted small mb-2"><i class="bi bi-envelope text-primary me-2"></i> info@lumina.film</p>
+                    <p class="text-muted small mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> North Hollywood, CA
+                        91605</p>
+                    <p class="text-muted small mb-2"><i class="bi bi-envelope text-primary me-2"></i> info@lumina.film
+                    </p>
                     <p class="text-muted small mb-0"><i class="bi bi-telephone text-primary me-2"></i> +1 (555) 0199</p>
                 </div>
                 <div class="col-lg-3 col-md-12">
@@ -240,5 +274,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-</html>
 
+</html>

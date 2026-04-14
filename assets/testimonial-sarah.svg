@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Sarah Jenkins portrait</title>
+  <desc id="desc">Premium cinematic portrait illustration of Sarah Jenkins.</desc>
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="25%" r="80%">
+      <stop offset="0%" stop-color="#f8f0dc"/>
+      <stop offset="55%" stop-color="#d8c3a0"/>
+      <stop offset="100%" stop-color="#7e6347"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f5ddb0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#c99d33" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0" x2="1">
+      <stop offset="0%" stop-color="#171717"/>
+      <stop offset="100%" stop-color="#3d3a37"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="128" fill="url(#bg)"/>
+  <circle cx="128" cy="128" r="124" fill="none" stroke="url(#rim)" stroke-width="8"/>
+  <path d="M34 212c18-48 55-71 94-71 41 0 77 24 94 71" fill="url(#coat)"/>
+  <path d="M93 162c9 11 21 17 35 17 15 0 28-6 36-17v49H93z" fill="#d4af37"/>
+  <ellipse cx="128" cy="102" rx="41" ry="49" fill="#f0c8aa"/>
+  <path d="M85 102c2-34 20-58 43-63 36-8 61 17 67 63-12-9-24-14-35-14-13 16-32 24-55 24-8 0-15-3-20-10z" fill="#4c372f"/>
+  <path d="M102 97c7-5 16-6 24-2" stroke="#563b33" stroke-width="5" stroke-linecap="round"/>
+  <path d="M133 95c7-4 15-4 22 0" stroke="#563b33" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="114" cy="112" rx="4.5" ry="5.5" fill="#2f211c"/>
+  <ellipse cx="145" cy="112" rx="4.5" ry="5.5" fill="#2f211c"/>
+  <path d="M129 116v15" stroke="#d29f83" stroke-width="4" stroke-linecap="round"/>
+  <path d="M114 141c9 8 22 8 31 0" stroke="#90575a" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <path d="M80 88c10-25 29-41 52-44" stroke="#71534c" stroke-width="8" stroke-linecap="round" opacity="0.75"/>
+  <circle cx="72" cy="186" r="22" fill="#ffffff" opacity="0.08"/>
+  <path d="M175 71c10 9 16 22 18 38" stroke="#f2e4bf" stroke-width="5" stroke-linecap="round" opacity="0.45"/>
+</svg>
